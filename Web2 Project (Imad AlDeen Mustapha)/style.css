@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(35, 150, 93);
+    color: white;
+    padding: 5px;
+}
+
+.header1 div {
+    margin: 0 10px;
+}
+
+.header1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    
+}
+
+.banner {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Basic Input Style */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Hover Effect */
+  input:hover {
+    border-color: #666;
+  }
+  
+  /* Focus Effect */
+  input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+
+.text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.picture {
+    flex: 1;
+    text-align: center;
+}
+
+.list1 {
+    display: flex;
+    justify-content: center;
+}
+
+.list1 div {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    max-width: 350px;
+}
+
+.list1 img {
+    width: 100%;
+}
+
+
+
+.form {
+    max-width: 600px;
+    margin: 0 ;
+    padding: 20px;
+}
+.form div {
+    background-color: rgb(186, 240, 184);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(35, 150, 93);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style for table headers */
+th {
+  background-color: green; /* Set header background color to green */
+  color: white; /* Set text color to white */
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for alternating rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Set background color for even rows */
+}
+
+/* Style for table cells */
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #e0e0e0; /* Set background color on hover */
+}
+
+
+@media screen and (max-width: 600px) {
+    .header1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header1 div {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .text-container {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+        background-color: rgb(186, 240, 184);
+    }
+    .list1 {
+        
+    display: inline;
+    }
+}
